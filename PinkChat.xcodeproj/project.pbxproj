@@ -16,6 +16,9 @@
 		070F109929D4DAE1008FE227 /* PinkChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F109829D4DAE1008FE227 /* PinkChatTests.swift */; };
 		070F10A329D4DAE1008FE227 /* PinkChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F10A229D4DAE1008FE227 /* PinkChatUITests.swift */; };
 		070F10A529D4DAE1008FE227 /* PinkChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070F10A429D4DAE1008FE227 /* PinkChatUITestsLaunchTests.swift */; };
+		07CCC76D29DA1B0400B2351F /* Color+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCC76C29DA1B0400B2351F /* Color+Extention.swift */; };
+		07CCC77729DA2BF300B2351F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCC77529DA2BF300B2351F /* LoginVC.swift */; };
+		07CCC77829DA2BF300B2351F /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CCC77629DA2BF300B2351F /* LoginVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		070F109E29D4DAE1008FE227 /* PinkChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinkChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		070F10A229D4DAE1008FE227 /* PinkChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkChatUITests.swift; sourceTree = "<group>"; };
 		070F10A429D4DAE1008FE227 /* PinkChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07CCC76C29DA1B0400B2351F /* Color+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extention.swift"; sourceTree = "<group>"; };
+		07CCC77529DA2BF300B2351F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		07CCC77629DA2BF300B2351F /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,12 @@
 		070F108029D4DADD008FE227 /* PinkChat */ = {
 			isa = PBXGroup;
 			children = (
-				070F108129D4DADD008FE227 /* AppDelegate.swift */,
-				070F108329D4DADD008FE227 /* SceneDelegate.swift */,
-				070F108529D4DADD008FE227 /* ViewController.swift */,
-				070F108729D4DADD008FE227 /* Main.storyboard */,
-				070F108A29D4DAE0008FE227 /* Assets.xcassets */,
-				070F108C29D4DAE0008FE227 /* LaunchScreen.storyboard */,
+				07CCC77329DA248C00B2351F /* Controllers */,
+				07CCC77229DA248200B2351F /* ViewModel */,
+				07CCC77129DA247300B2351F /* View */,
+				07CCC76F29DA245D00B2351F /* Model */,
+				07CCC76E29DA245200B2351F /* Resources */,
+				07CCC76B29DA1AC300B2351F /* Utils */,
 				070F108F29D4DAE0008FE227 /* Info.plist */,
 			);
 			path = PinkChat;
@@ -125,6 +131,65 @@
 				070F10A429D4DAE1008FE227 /* PinkChatUITestsLaunchTests.swift */,
 			);
 			path = PinkChatUITests;
+			sourceTree = "<group>";
+		};
+		07CCC76B29DA1AC300B2351F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07CCC76C29DA1B0400B2351F /* Color+Extention.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		07CCC76E29DA245200B2351F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				070F108129D4DADD008FE227 /* AppDelegate.swift */,
+				070F108329D4DADD008FE227 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		07CCC76F29DA245D00B2351F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07CCC77129DA247300B2351F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07CCC77429DA24B100B2351F /* Storyboards */,
+				070F108A29D4DAE0008FE227 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07CCC77229DA248200B2351F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07CCC77329DA248C00B2351F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				070F108529D4DADD008FE227 /* ViewController.swift */,
+				07CCC77529DA2BF300B2351F /* LoginVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07CCC77429DA24B100B2351F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				07CCC77629DA2BF300B2351F /* LoginVC.xib */,
+				070F108C29D4DAE0008FE227 /* LaunchScreen.storyboard */,
+				070F108729D4DADD008FE227 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +298,7 @@
 			files = (
 				070F108E29D4DAE0008FE227 /* LaunchScreen.storyboard in Resources */,
 				070F108B29D4DAE0008FE227 /* Assets.xcassets in Resources */,
+				07CCC77829DA2BF300B2351F /* LoginVC.xib in Resources */,
 				070F108929D4DADD008FE227 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +324,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07CCC76D29DA1B0400B2351F /* Color+Extention.swift in Sources */,
 				070F108629D4DADD008FE227 /* ViewController.swift in Sources */,
 				070F108229D4DADD008FE227 /* AppDelegate.swift in Sources */,
 				070F108429D4DADD008FE227 /* SceneDelegate.swift in Sources */,
+				07CCC77729DA2BF300B2351F /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
